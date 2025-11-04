@@ -34,75 +34,75 @@ const Navigation = () => {
           <div className=" absolute top-[110px] left-2  bg-white border border-gray-300 shadow-md rounded-2xl cursor-pointer grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
             <div className="p-4 border ">
               <h3 className="text-black text-bold text-2xl">BAZA WIEDZY</h3>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">orzecznictwo</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">ustawa Pzp</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">zawartość</a>
               </h4>
             </div>
             <div className="p-4 border ">
               <h3 className="text-black text-bold text-2xl">AKTUALNOŚCI</h3>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">blog</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">popularne</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">ciekawe</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">nowe</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">wokanda</a>
               </h4>
             </div>
             <div className="p-4 border ">
               <h3 className="text-black text-bold text-2xl">NARZĘDZIA</h3>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">kody CPV</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">indeks tematyczny</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">sumy kontrolne</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">analiza PDF/PAdES</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">walidacja</a>
               </h4>
 
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">terminy</a>
               </h4>
 
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">wzory</a>
               </h4>
             </div>
             <div className="p-4 border ">
               <h3 className="text-black text-bold text-2xl">EDUKACJA</h3>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">SpotKIO</a>
               </h4>
             </div>
             <div className="p-4 border ">
               <h3 className="text-black text-bold text-2xl">O DJANKIO</h3>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">cennik</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">kontakt</a>
               </h4>
-              <h4 className="text-gray-500 hover:bg-gray-200">
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
                 <a href="">zawartość</a>
               </h4>
             </div>

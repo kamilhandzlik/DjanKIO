@@ -1,6 +1,11 @@
+"use client";
+import { useState } from "react";
+
 import Link from "next/link";
 
 const UserNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="flex items-center space-x-3">
       {/* MAŁE EKRANY */}
@@ -14,25 +19,48 @@ const UserNav = () => {
         </Link>
 
         {/* Ikona użytkownika */}
-        <Link
-          href="/"
-          className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 transition-colors"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-[30px] h-[30px] text-black"
+        <button onClick={() => setIsOpen(!isOpen)}>
+          <Link
+            href="/"
+            className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 transition-colors"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            <img
+              alt="name"
+              src="/default_user.png"
+              className="w-full max-w-[144px] h-auto rounded-full mx-auto object-cover"
             />
-          </svg>
-        </Link>
+          </Link>
+        </button>
+
+        {isOpen && (
+          <div className="absolute top-[110px] right-2 bg-white border border-gray-300 shadow-md rounded-2xl cursor-pointer grid grid-cols-1">
+            <div className="p-5 border">
+              {/* Dodaj mechanizm wyświetlania ikony i nazwy użytkownika później */}
+              <a href="" className="block relative">
+                <img
+                  alt="name"
+                  src="/default_user.png"
+                  className="w-full max-w-[144px] h-auto rounded-full mx-auto object-cover"
+                />
+              </a>
+
+              <h3 className="text-black text-bold text-2xl">Gość</h3>
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
+                <a href="">Profil</a>
+              </h4>
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
+                <a href="">Ustawienia</a>
+              </h4>
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
+                <a href="">Zarejestruj się</a>
+              </h4>
+
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
+                <a href="">Zaloguj się</a>
+              </h4>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* ŚREDNIE I WIĘKSZE EKRANY */}
@@ -46,26 +74,48 @@ const UserNav = () => {
         </Link>
 
         {/* Zaloguj */}
-        <Link
-          href="/"
-          className="flex items-center space-x-2 rounded-full px-4 py-2 hover:bg-gray-200 transition-colors"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-[30px] h-[30px] text-black"
+        <button onClick={() => setIsOpen(!isOpen)}>
+          <Link
+            href="/"
+            className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200 transition-colors"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            <img
+              alt="name"
+              src="/default_user.png"
+              className="w-full max-w-[144px] h-auto rounded-full mx-auto object-cover"
             />
-          </svg>
-          <span className="text-2xl text-black">Zaloguj</span>
-        </Link>
+          </Link>
+        </button>
+
+        {isOpen && (
+          <div className="absolute top-[110px] right-2 bg-white border border-gray-300 shadow-md rounded-2xl cursor-pointer grid grid-cols-1">
+            <div className="p-5 border">
+              {/* Dodaj mechanizm wyświetlania ikony i nazwy użytkownika później */}
+              <a href="" className="block relative">
+                <img
+                  alt="name"
+                  src="/default_user.png"
+                  className="w-full max-w-[144px] h-auto rounded-full mx-auto object-cover"
+                />
+              </a>
+
+              <h3 className="text-black text-bold text-2xl">Gość</h3>
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
+                <a href="">Profil</a>
+              </h4>
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
+                <a href="">Ustawienia</a>
+              </h4>
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
+                <a href="">Zarejestruj się</a>
+              </h4>
+
+              <h4 className="text-gray-500 hover:bg-gray-200 rounded-2xl">
+                <a href="">Zaloguj się</a>
+              </h4>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
