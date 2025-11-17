@@ -21,21 +21,21 @@ const Categories = () => {
         </div>
         <div className="text-gray-500 px-2">1234</div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
       </div>
 
       <div className="bg-white border shadow-md hover:shadow-xl transition-shadow duration-200 relative group">
         <div className="text-black px-2 py-0.5">KIO</div>
         <div className="text-gray-500 px-2">1234</div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
       </div>
 
       <div className="bg-white border shadow-md hover:shadow-xl transition-shadow duration-200 relative group">
         <div className="text-black px-2 py-0.5">SO</div>
         <div className="text-gray-500 px-2">1234</div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
       </div>
     </div>
   );

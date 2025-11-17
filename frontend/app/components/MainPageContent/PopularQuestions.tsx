@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const PopularQuestions = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="w-full max-w-[1200px]">
@@ -37,7 +37,6 @@ const PopularQuestions = () => {
       {/* BOX */}
       {isOpen && (
         <div className="border border-gray-200 shadow-md bg-white rounded-lg p-6 lg:w-[1200px]">
-          {/* GRID JAK ZE SCRENA: 3 równe kolumny */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[1200px] gap-x-10 gap-y-6 text-gray-500 ">
             {/* KOLUMNA 1 */}
             <div className="flex flex-col gap-2 lg:w-[400px]">
