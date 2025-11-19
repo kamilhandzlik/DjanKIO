@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import PopularQuestions from "./PopularQuestions";
 import InterestingArticles from "./InterestingArticles";
+import BlogNews from "./BlogNews";
 
 const MainPageContent = () => {
   return (
@@ -11,6 +12,7 @@ const MainPageContent = () => {
       <div className="pl-3 mb-12 w-full flex flex-col gap-8">
         <PopularQuestions />
         <InterestingArticles />
+        <BlogNews />
       </div>
     </>
   );
