@@ -9,7 +9,6 @@ const SignatureBanner = () => {
       href="/pricetag"
       className="group w-full max-w-[1200px] mx-auto border border-gray-300 rounded-md overflow-hidden cursor-pointer grid grid-cols-1 md:grid-cols-2 bg-white"
     >
-      {/* LEWA STRONA */}
       <div className="p-10 flex flex-col gap-4 justify-center">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 leading-snug">
           Chcesz potwierdzić ważność podpisu elektronicznego?
@@ -40,7 +39,6 @@ const SignatureBanner = () => {
         </div>
       </div>
 
-      {/* PRAWA STRONA — OBRAZ */}
       <div className="relative w-full h-[220px] md:h-full">
         <Image
           src="/writing-man.png"
