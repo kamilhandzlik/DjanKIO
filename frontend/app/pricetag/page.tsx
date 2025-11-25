@@ -2,12 +2,13 @@
 import Image from "next/image";
 
 import SignatureBanner from "../components/PricetagContent/signatureBanner";
+import Offers from "../components/PricetagContent/offers";
 
 const PriceTagPage = () => {
   return (
     <>
       <div className="min-h-screen w-full bg-zinc-50 flex flex-col gap-0.5">
-        <div className="w-[200px] h-[200px] items-center justify-center mx-auto py-10">
+        <div className="w-[200px] h-[200px] flex items-center justify-center mx-auto py-10">
           <Image
             src="/djankio-mark-flat.png"
             alt="Price Tag Banner"
@@ -21,6 +22,7 @@ const PriceTagPage = () => {
         </h1>
 
         <SignatureBanner />
+        <Offers />
       </div>
     </>
   );
