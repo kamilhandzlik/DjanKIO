@@ -5,7 +5,7 @@ import Link from "next/link";
 const Offers = () => {
   return (
     <div className="w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-center">
         {/* ITEM 1 */}
         <div>
           {/* Tytuł sekcji */}
@@ -81,13 +81,13 @@ const Offers = () => {
             <h1 className="text-orange-500 font-bold text-3xl">Dla zespołu</h1>
             <div className="absolute bottom-0 w-full h-[3px] bg-orange-500 rounded-full"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="flex flex-col lg:flex-row justify-center gap-10 w-full">
             {/* KARTA 1*/}
-            <div className="border-2 border-orange-500 rounded-2xl overflow-hidden mt-4 w-[380px] mx-auto">
+            <div className="border-2 border-gray-500 rounded-2xl overflow-hidden mt-4 w-[380px] mx-auto">
               {/* Header */}
-              <div className="bg-orange-500 py-4">
-                <h2 className="text-white">Plan</h2>
-                <h1 className="text-white font-semibold text-2xl">Zespół 2</h1>
+              <div className="bg-zinc-200 py-4">
+                <h2 className="text-gray-700">Plan</h2>
+                <h1 className="text-black font-semibold text-2xl">Zespół 2</h1>
               </div>
 
               {/* Treść */}
@@ -218,11 +218,11 @@ const Offers = () => {
           </div>
 
           {/* KARTA */}
-          <div className="border-2 border-orange-500 rounded-2xl overflow-hidden mt-4 w-[380px] mx-auto">
+          <div className="border-2 border-gray-500 rounded-2xl overflow-hidden mt-4 w-[380px] mx-auto">
             {/* Header */}
-            <div className="bg-orange-500 py-4">
-              <h2 className="text-white">Najczęściej wybierany plan</h2>
-              <h1 className="text-white font-semibold text-2xl">Standardowy</h1>
+            <div className="bg-zinc-200 py-4">
+              <h2 className="text-gray-700">Najczęściej wybierany plan</h2>
+              <h1 className="text-black font-semibold text-2xl">Standardowy</h1>
             </div>
 
             {/* Treść */}
