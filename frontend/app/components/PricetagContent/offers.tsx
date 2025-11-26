@@ -278,6 +278,42 @@ const Offers = () => {
           </div>
         </div>
       </div>
+      {/* Info text under cards */}
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="w-full flex flex-col items-center text-center mt-8">
+          <p className="text-[20px] text-gray-800 leading-relaxed">
+            Oferta ważna jest do{" "}
+            <span className="font-semibold">2026-05-31</span>.
+            <span className="inline-flex items-center justify-center w-6 h-6 mx-1 rounded-full border border-orange-500 text-orange-600 text-[13px] font-semibold">
+              1
+            </span>
+            Kliknij <span className="font-semibold">Zamawiam</span>,
+            <span className="inline-flex items-center justify-center w-6 h-6 mx-1 rounded-full border border-orange-500 text-orange-600 text-[13px] font-semibold">
+              2
+            </span>
+            wypełnij formularz zamówienia,
+            <span className="inline-flex items-center justify-center w-6 h-6 mx-1 rounded-full border border-orange-500 text-orange-600 text-[13px] font-semibold">
+              3
+            </span>
+            uruchomimy dostęp w ciągu 2 minut i
+            <span className="inline-flex items-center justify-center w-6 h-6 mx-1 rounded-full border border-orange-500 text-orange-600 text-[13px] font-semibold">
+              4
+            </span>
+            wystawimy <span className="font-semibold">fakturę VAT</span> z
+            terminem płatności 21 dni od daty otrzymania faktury.
+          </p>
+        </div>
+        <Link
+          href="#"
+          className="flex w-full items-center bg-white shadow-md rounded-xl p-6 gap-4 hover:shadow-lg transition cursor-pointer"
+        >
+          <div className="w-1/4 flex justify-end">
+            <button className="px-4 py-2 rounded-lg bg-orange-500 text-[25px] text-white hover:bg-orange-600 transition">
+              Pobierz
+            </button>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };
