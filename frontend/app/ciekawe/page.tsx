@@ -1,9 +1,13 @@
 "use client";
 import Link from "next/link";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Wokanda from "../components/wokanda/wokanda";
 =======
 >>>>>>> ddceb75 (changed bg-color in global css and added ciekawe page)
+=======
+import Wokanda from "../components/wokanda/wokanda";
+>>>>>>> 9bb9ac6 (added wokanda component created wokanda page and added wokanda to main, pricetag and new)
 
 const CiekawePage = () => {
   return (
@@ -70,9 +74,13 @@ const CiekawePage = () => {
         </Link>
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <Wokanda />
 =======
 >>>>>>> ddceb75 (changed bg-color in global css and added ciekawe page)
+=======
+      <Wokanda />
+>>>>>>> 9bb9ac6 (added wokanda component created wokanda page and added wokanda to main, pricetag and new)
     </div>
   );
 };
