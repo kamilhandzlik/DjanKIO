@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import SearchField from "./components/search_field/search";
 import MainPageContent from "./components/MainPageContent/MainPageContent";
+import Wokanda from "./components/wokanda/wokanda";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
 
       <MainPageContent />
+      <Wokanda />
     </div>
   );
 }
