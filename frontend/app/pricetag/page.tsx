@@ -6,6 +6,7 @@ import Offers from "../components/PricetagContent/offers";
 import Testimonials from "../components/MainPageContent/TestimonialCards";
 import Questions from "../components/PricetagContent/questions";
 import FAQ from "../components/PricetagContent/FAQ";
+import Wokanda from "../components/wokanda/wokanda";
 
 const PriceTagPage = () => {
   return (
@@ -134,6 +135,7 @@ const PriceTagPage = () => {
           </div>
           <Questions />
           <FAQ />
+          <Wokanda />
         </div>
       </div>
     </>
