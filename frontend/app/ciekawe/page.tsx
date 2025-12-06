@@ -1,6 +1,9 @@
 "use client";
 import Link from "next/link";
+<<<<<<< HEAD
 import Wokanda from "../components/wokanda/wokanda";
+=======
+>>>>>>> ddceb75 (changed bg-color in global css and added ciekawe page)
 
 const CiekawePage = () => {
   return (
@@ -66,7 +69,10 @@ const CiekawePage = () => {
           </h1>
         </Link>
       </div>
+<<<<<<< HEAD
       <Wokanda />
+=======
+>>>>>>> ddceb75 (changed bg-color in global css and added ciekawe page)
     </div>
   );
 };
