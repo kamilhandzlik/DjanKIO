@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Wokanda from "../components/wokanda/wokanda";
 
 const CiekawePage = () => {
   return (
@@ -65,6 +66,7 @@ const CiekawePage = () => {
           </h1>
         </Link>
       </div>
+      <Wokanda />
     </div>
   );
 };
