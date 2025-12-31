@@ -5,7 +5,13 @@ interface Props {
   setMode: (mode: Mode) => void;
 }
 
-const modes: Mode[] = ["TZO", "TSO", "SWZ", "ODWOLANIE"];
+const modes: Mode[] = [
+  "TZO",
+  "TSO",
+  "Odwołanie",
+  "Pytania do SWZ",
+  "Odpowiedź na pytania do SWZ",
+];
 
 export default function ModeTabs({ mode, setMode }: Props) {
   return (

@@ -2,27 +2,17 @@
 
 import { useState } from "react";
 import ModeTabs from "./components/ModeTabs";
-import DatePicker from "./components/DatePicker";
-import CalculateButton from "./components/CalculateButton";
-import Result from "./components/Result";
-import { calculateTZO } from "./logic/tzo";
+import TZOView from "./components/TZO/TZOView";
 
-export type Mode = "TZO" | "TSO" | "SWZ" | "ODWOLANIE";
+export type Mode =
+  | "TZO"
+  | "TSO"
+  | "Odwołanie"
+  | "Pytania do SWZ"
+  | "Odpowiedź na pytania do SWZ";
 
 export default function TerminyPage() {
   const [mode, setMode] = useState<Mode>("TZO");
-  const [date, setDate] = useState<Date | null>(null);
-  const [result, setResult] = useState<Date | null>(null);
-
-  const handleCalculate = () => {
-    if (!date) return;
-
-    if (mode === "TZO") {
-      const calculated = calculateTZO(date, 0);
-
-      setResult(calculated);
-    }
-  };
 
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
@@ -30,11 +20,14 @@ export default function TerminyPage() {
 
       <ModeTabs mode={mode} setMode={setMode} />
 
-      <DatePicker value={date} onChange={setDate} />
-
-      <CalculateButton onClick={handleCalculate} />
-
-      {result && <Result date={result} />}
+      {/* 👇 TU JEST CAŁA MAGIA */}
+      {mode === "TZO" && <TZOView />}
+      {mode === "TSO" && <div>TSO – wkrótce</div>}
+      {mode === "Odwołanie" && <div>Odwołanie – wkrótce</div>}
+      {mode === "Pytania do SWZ" && <div>Pytania do SWZ – wkrótce</div>}
+      {mode === "Odpowiedź na pytania do SWZ" && (
+        <div>Odpowiedź na pytania do SWZ – wkrótce</div>
+      )}
     </div>
   );
 }
