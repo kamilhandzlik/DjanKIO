@@ -6,6 +6,7 @@ import TZOBindingSelector from "./TZOBindingSelector";
 import TZOResults from "./TZOResults";
 import TZOUsedData from "./TZOUsedData";
 import { calculateTZO } from "../../logic/tzo";
+import CalendarView from "../CalendarView";
 
 export default function TZOView() {
   const [submissionDate, setSubmissionDate] = useState<Date | null>(null);
@@ -37,8 +38,8 @@ export default function TZOView() {
         </button>
       </div>
 
-      {/* WYNIKI */}
-      {result && (
+      {/* Kalendarz  */}
+      {result && submissionDate && (
         <>
           <hr />
 
@@ -51,6 +52,8 @@ export default function TZOView() {
             submissionDate={submissionDate}
             bindingDays={bindingDays}
           />
+
+          <CalendarView startDate={submissionDate} endDate={result.lastDay} />
         </>
       )}
     </div>
