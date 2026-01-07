@@ -3,12 +3,12 @@ interface Props {
   onChange: (value: number) => void;
 }
 
-const presets = [30, 90, 120];
+const presets = [2, 5, 7, 10, 14, 15, 20, 21, 22, 25, 30, 35, 40];
 
-export default function TZOBindingSelector({ value, onChange }: Props) {
+export default function TSOBindingSelector({ value, onChange }: Props) {
   return (
     <div className="space-y-2">
-      <label className="font-medium text-black">Termin związania ofertą</label>
+      <label className="font-medium text-black">Termin składania ofert</label>
 
       <div className="flex gap-2 text-gray-500">
         {presets.map((p) => (
@@ -33,7 +33,7 @@ export default function TZOBindingSelector({ value, onChange }: Props) {
         min={1}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="border border-gray-300 px-3 py-2 rounded w-32"
+        className="border px-3 py-2 rounded w-32 border-gray-300"
       />
     </div>
   );
