@@ -4,6 +4,8 @@ import { useState } from "react";
 import ModeTabs from "./components/ModeTabs";
 import TZOView from "./components/TZO/TZOView";
 import TSOView from "./components/TSO/TSOView";
+import ODView from "./components/odwolanie/ODView";
+import Wokanda from "../components/wokanda/wokanda";
 
 export type Mode =
   | "TZO"
@@ -23,11 +25,13 @@ export default function TerminyPage() {
 
       {mode === "TZO" && <TZOView />}
       {mode === "TSO" && <TSOView />}
-      {mode === "Odwołanie" && <div>Odwołanie – wkrótce</div>}
+      {mode === "Odwołanie" && <ODView />}
       {mode === "Pytania do SWZ" && <div>Pytania do SWZ – wkrótce</div>}
       {mode === "Odpowiedź na pytania do SWZ" && (
         <div>Odpowiedź na pytania do SWZ – wkrótce</div>
       )}
+
+      <Wokanda />
     </div>
   );
 }

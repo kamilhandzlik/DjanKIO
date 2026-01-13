@@ -5,7 +5,7 @@ interface Props {
 
 const presets = [5, 10, 15, 30];
 
-export default function TZOBindingSelector({ value, onChange }: Props) {
+export default function ODBindingSelector({ value, onChange }: Props) {
   return (
     <div className="space-y-2">
       <label className="font-medium text-black">Termin związania ofertą</label>
