@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import DatePicker from "../DatePicker";
-import TSOBindingSelector from "./TSOBindingSelector";
-import TSOResults from "./TSOResults";
+import OSWZBindingSelector from "./OSWZBindingSelector";
 import { calculateTSO } from "../../logic/tso";
+import OSWZResults from "./OSWZResults";
+import OSWZUsedData from "./OSWZUsedData";
 import CalendarView from "../CalendarView";
-import TZOUsedData from "./TSOUserData";
 
-export default function TSOView() {
+export default function OSWZView() {
   const [submissionDate, setSubmissionDate] = useState<Date | null>(null);
   const [bindingDays, setBindingDays] = useState(30);
   const [result, setResult] = useState<{
@@ -23,31 +23,27 @@ export default function TSOView() {
   };
 
   return (
-    <div className="space-y-6">
-      {/* FORMULARZ */}
-      <div className="space-y-4">
-        <DatePicker value={submissionDate} onChange={setSubmissionDate} />
+    <div className="space-y-4">
+      <DatePicker value={submissionDate} onChange={setSubmissionDate} />
 
-        <TSOBindingSelector value={bindingDays} onChange={setBindingDays} />
+      <OSWZBindingSelector value={bindingDays} onChange={setBindingDays} />
 
-        <button
-          onClick={handleCalculate}
-          className="bg-orange-500 text-white px-6 py-3 rounded font-semibold"
-        >
-          Oblicz upływ TSO
-        </button>
-      </div>
+      <button
+        onClick={handleCalculate}
+        className="bg-orange-500 text-white px-6 py-3 rounded font-semibold"
+      >
+        Oblicz ostateczny termin na składanie pytań
+      </button>
 
-      {/* Kalendarz  */}
       {result && submissionDate && (
         <>
           <hr />
-          <TSOResults
+          <OSWZResults
             lastDay={result.lastDay}
             firstDayAfter={result.firstDayAfter}
           />
 
-          <TZOUsedData
+          <OSWZUsedData
             submissionDate={submissionDate}
             bindingDays={bindingDays}
           />

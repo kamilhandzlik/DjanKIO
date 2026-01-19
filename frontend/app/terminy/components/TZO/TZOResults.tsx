@@ -10,12 +10,12 @@ export default function TZOResults({ lastDay, firstDayAfter }: Props) {
 
       <div className="space-y-2 text-green-500 text-xl">
         <p>
-          <strong>Ostatni dzień TZO:</strong>{" "}
+          <strong>Ostatni dzień terminu związania ofertą:</strong>{" "}
           {lastDay.toLocaleDateString("pl-PL")}
         </p>
 
         <p>
-          <strong>Pierwszy dzień po upływie TZO:</strong>{" "}
+          <strong>Pierwszy dzień po upływie terminu związania ofertą:</strong>{" "}
           {firstDayAfter.toLocaleDateString("pl-PL")}
         </p>
       </div>
