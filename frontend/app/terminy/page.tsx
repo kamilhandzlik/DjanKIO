@@ -5,6 +5,8 @@ import ModeTabs from "./components/ModeTabs";
 import TZOView from "./components/TZO/TZOView";
 import TSOView from "./components/TSO/TSOView";
 import ODView from "./components/odwolanie/ODView";
+import PSWZView from "./components/PSWZ/PSWZView";
+import OSWZView from "./components/OSWZ/OSWZView";
 import Wokanda from "../components/wokanda/wokanda";
 
 export type Mode =
@@ -26,10 +28,8 @@ export default function TerminyPage() {
       {mode === "TZO" && <TZOView />}
       {mode === "TSO" && <TSOView />}
       {mode === "Odwołanie" && <ODView />}
-      {mode === "Pytania do SWZ" && <div>Pytania do SWZ – wkrótce</div>}
-      {mode === "Odpowiedź na pytania do SWZ" && (
-        <div>Odpowiedź na pytania do SWZ – wkrótce</div>
-      )}
+      {mode === "Pytania do SWZ" && <PSWZView />}
+      {mode === "Odpowiedź na pytania do SWZ" && <OSWZView />}
 
       <Wokanda />
     </div>
