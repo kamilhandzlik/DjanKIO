@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ModeTabs from "./components/ModeTabs";
 import LoginView from "./components/LoginView";
+import RegisterView from "./components/RegisterView";
 import Wokanda from "../components/wokanda/wokanda";
 
 export type Mode = "Logowanie" | "Rejestracja";
@@ -16,9 +17,7 @@ export default function LogowanieView() {
         <ModeTabs mode={mode} setMode={setMode} />
 
         {mode === "Logowanie" && <LoginView />}
-        {mode === "Rejestracja" && (
-          <div className="text-black">Rejestracja</div>
-        )}
+        {mode === "Rejestracja" && <RegisterView />}
       </div>
       <Wokanda />
     </div>
